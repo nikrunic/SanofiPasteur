@@ -1,0 +1,202 @@
+.banner {
+  position: relative;
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  .bannerContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    color: #fff;
+    max-width: 83.3%;
+    margin: auto;
+    right: 0;
+    display: flex;
+    padding-top: 13.4%;
+
+    h2 {
+      font-size: 3.552rem;
+      text-transform: uppercase;
+      line-height: 1;
+    }
+  }
+}
+.locationSection {
+  background-color: $secondary;
+  color: #fff;
+  hr {
+    border: 1px solid #282828;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .locationSec_1 {
+    padding-top: 1.7rem;
+    padding-bottom: 3.8rem;
+    h4 {
+      font-size: 1.38rem;
+      font-weight: 400;
+      line-height: 1.4;
+    }
+    h3 {
+      display: inline-flex;
+      align-items: center;
+      font-size: 1.84rem;
+      font-weight: 500;
+      line-height: 1.4;
+      padding-left: 1.3rem;
+      img {
+        margin-right: 0.5rem;
+      }
+    }
+    a {
+      padding: 0.8rem 22px;
+      line-height: 1;
+      display: inline-flex;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1.32rem;
+      margin-left: 0.4rem;
+    }
+  }
+  .locationSec_2 {
+    #map {
+      height: 60vh;
+      min-height: 28.8rem;
+    }
+  }
+  .locationSec_3 {
+    padding: 5rem 0;
+    ul {
+      margin-left: -15px;
+      margin-right: -15px;
+      li {
+        padding-left: 25px;
+        padding-right: 25px;
+        width: 33.33%;
+        .form-control {
+          width: 100%;
+          height: 80px;
+          background: #9ca913;
+          border: 4px solid #fff;
+          border-radius: 5px;
+          text-align: center;
+          font-size: 1.6rem;
+          color: #fff;
+          &::placeholder {
+            color: #ffffff80;
+          }
+        }
+        .btn {
+          width: 100%;
+          height: 100%;
+          font-size: 1.5rem;
+          border: 2px solid #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img {
+            margin-right: 7px;
+          }
+        }
+      }
+    }
+  }
+}
+.listingSection {
+  padding-top: 3.8rem;
+  h1 {
+    font-size: 3.4rem;
+    display: flex;
+    align-items: flex-end;
+    small {
+      font-size: 40%;
+      padding-left: 1.5%;
+    }
+  }
+  .listing_blk {
+    padding: 3.4rem 0.3rem;
+
+    .grid-l1 {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      border-radius: 15px;
+
+      .box-a1 {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        margin: 5px 0px;
+        background: #4a63ae;
+
+        .listigHeader {
+          width: 100%;
+          text-align: left;
+          color: #fff;
+          cursor: pointer;
+          margin: 0px !important;
+          padding: 15px 55px;
+          border-radius: 15px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .compDetails {
+            display: flex;
+            align-items: center;
+
+            .compImg {
+              height: 116px;
+              width: 116px;
+              background-color: #fff;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              img {
+                max-width: 95%;
+              }
+            }
+            .compName {
+              font-size: 38.77px;
+              color: #fff;
+              font-weight: 600;
+              padding-left: 1rem;
+            }
+          }
+          .compContact {
+            display: flex;
+            align-items: center;
+            font-size: 1.3rem;
+            justify-content: space-between;
+            width: 36%;
+            .connect {
+              display: flex;
+              align-items: center;
+              .callNow,
+              .mailNow {
+                font-size: 30px;
+                display: flex;
+                align-items: center;
+                color: #fff;
+                padding-right: 1rem;
+                img {
+                  margin-right: 10px;
+                }
+              }
+            }
+          }
+        }
+        .level-box {
+          width: 100%;
+          height: auto;
+          overflow: hidden;
+          padding: 10px;
+          display: none;
+        }
+      }
+    }
+  }
+}
