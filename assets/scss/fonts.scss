@@ -1,0 +1,51 @@
+// @font-face {
+//     font-family: 'itc_avant_garde_gothic_demiRg';
+//     src: url('../fonts/itc_avant_garde_gothic_demiRg.woff') format('woff2'),
+//          url('../fonts/itc_avant_garde_gothic_demiRg.woff2') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+
+// }
+
+// @font-face {
+//     font-family: 'itc_avant_garde_gothicXLt';
+//     src: url('../fonts/itc_avant_garde_gothicXLt.woff2') format('woff2'),
+//          url('../fonts/itc_avant_garde_gothicXLt.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+@font-face {
+  font-family: "ITCAvantGardePro-Bold";
+  src: url("../fonts/ITCAvantGardePro-Bold.eot");
+  src: url("../fonts/ITCAvantGardePro-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/ITCAvantGardePro-Bold.ttf") format("truetype"),
+    url("../fonts/ITCAvantGardePro-Bold.woff") format("woff"),
+    url("../fonts/ITCAvantGardePro-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ITCAvantGardePro-Md";
+  src: url("../fonts/ITCAvantGardePro-Md.eot");
+  src: url("../fonts/ITCAvantGardePro-Md.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/ITCAvantGardePro-Md.ttf") format("truetype"),
+    url("../fonts/ITCAvantGardePro-Md.woff") format("woff"),
+    url("../fonts/ITCAvantGardePro-Md.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ITCAvantGardePro-Bk";
+  src: url("../fonts/ITCAvantGardePro-Bk.otf");
+  src: url("../fonts/ITCAvantGardePro-Bk.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/ITCAvantGardePro-Bk.ttf") format("truetype"),
+    url("../fonts/ITCAvantGardePro-Bk.woff") format("woff"),
+    url("../fonts/ITCAvantGardePro-Bk.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
