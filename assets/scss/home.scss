@@ -117,18 +117,20 @@
     }
   }
   .listing_blk {
-    padding: 3.4rem 0.3rem;
+    padding: 2.4rem 0.3rem;
 
     .grid-l1 {
       width: 100%;
       height: auto;
       overflow: hidden;
-      border-radius: 15px;
-
-      .box-a1 {
+      .boxListing{
+        padding: 1.21rem 0;
+        border-bottom: 3px solid #000;
+      .box-acco {
         width: 100%;
         height: auto;
         overflow: hidden;
+        border-radius: 15px;
         margin: 5px 0px;
         background: #4a63ae;
 
@@ -139,7 +141,6 @@
           cursor: pointer;
           margin: 0px !important;
           padding: 15px 55px;
-          border-radius: 15px;
           display: flex;
           align-items: center;
           justify-content: space-between;
@@ -195,8 +196,24 @@
           overflow: hidden;
           padding: 10px;
           display: none;
+          .mainAddress{
+            display: none;
+            &.active{display: block;}
+          }
+          .tab_title_inner_blk {
+            display: flex;
+            li{
+              span {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            }
+        }
+        
         }
       }
+    }  
     }
   }
 }

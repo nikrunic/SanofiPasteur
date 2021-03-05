@@ -710,6 +710,26 @@ label {
   background: #ebebeb;
 }
 
+.tab_cont_li {
+  display: none;
+}
+
+.tab_cont_li.active {
+  display: block;
+}
+
+.tab_title_inner_blk li.active {
+  background: #bdbaba;
+}
+
+.tab_cont_blk {
+  margin-top: 10px;
+}
+
+body * {
+  opacity: 1 !important;
+}
+
 header {
   color: #fff;
   position: relative;
@@ -988,38 +1008,41 @@ footer .topFooter ul li:first-child a {
   padding-left: 1.5%;
 }
 .listingSection .listing_blk {
-  padding: 3.4rem 0.3rem;
+  padding: 2.4rem 0.3rem;
 }
 .listingSection .listing_blk .grid-l1 {
   width: 100%;
   height: auto;
   overflow: hidden;
-  border-radius: 15px;
 }
-.listingSection .listing_blk .grid-l1 .box-a1 {
+.listingSection .listing_blk .grid-l1 .boxListing {
+  padding: 1.21rem 0;
+  border-bottom: 3px solid #000;
+}
+.listingSection .listing_blk .grid-l1 .boxListing .box-acco {
   width: 100%;
   height: auto;
   overflow: hidden;
+  border-radius: 15px;
   margin: 5px 0px;
   background: #4a63ae;
 }
-.listingSection .listing_blk .grid-l1 .box-a1 .listigHeader {
+.listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader {
   width: 100%;
   text-align: left;
   color: #fff;
   cursor: pointer;
   margin: 0px !important;
   padding: 15px 55px;
-  border-radius: 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.listingSection .listing_blk .grid-l1 .box-a1 .listigHeader .compDetails {
+.listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader .compDetails {
   display: flex;
   align-items: center;
 }
-.listingSection .listing_blk .grid-l1 .box-a1 .listigHeader .compDetails .compImg {
+.listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader .compDetails .compImg {
   height: 116px;
   width: 116px;
   background-color: #fff;
@@ -1028,42 +1051,56 @@ footer .topFooter ul li:first-child a {
   align-items: center;
   justify-content: center;
 }
-.listingSection .listing_blk .grid-l1 .box-a1 .listigHeader .compDetails .compImg img {
+.listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader .compDetails .compImg img {
   max-width: 95%;
 }
-.listingSection .listing_blk .grid-l1 .box-a1 .listigHeader .compDetails .compName {
+.listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader .compDetails .compName {
   font-size: 38.77px;
   color: #fff;
   font-weight: 600;
   padding-left: 1rem;
 }
-.listingSection .listing_blk .grid-l1 .box-a1 .listigHeader .compContact {
+.listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader .compContact {
   display: flex;
   align-items: center;
   font-size: 1.3rem;
   justify-content: space-between;
   width: 36%;
 }
-.listingSection .listing_blk .grid-l1 .box-a1 .listigHeader .compContact .connect {
+.listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader .compContact .connect {
   display: flex;
   align-items: center;
 }
-.listingSection .listing_blk .grid-l1 .box-a1 .listigHeader .compContact .connect .callNow,
-.listingSection .listing_blk .grid-l1 .box-a1 .listigHeader .compContact .connect .mailNow {
+.listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader .compContact .connect .callNow,
+.listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader .compContact .connect .mailNow {
   font-size: 30px;
   display: flex;
   align-items: center;
   color: #fff;
   padding-right: 1rem;
 }
-.listingSection .listing_blk .grid-l1 .box-a1 .listigHeader .compContact .connect .callNow img,
-.listingSection .listing_blk .grid-l1 .box-a1 .listigHeader .compContact .connect .mailNow img {
+.listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader .compContact .connect .callNow img,
+.listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader .compContact .connect .mailNow img {
   margin-right: 10px;
 }
-.listingSection .listing_blk .grid-l1 .box-a1 .level-box {
+.listingSection .listing_blk .grid-l1 .boxListing .box-acco .level-box {
   width: 100%;
   height: auto;
   overflow: hidden;
   padding: 10px;
   display: none;
+}
+.listingSection .listing_blk .grid-l1 .boxListing .box-acco .level-box .mainAddress {
+  display: none;
+}
+.listingSection .listing_blk .grid-l1 .boxListing .box-acco .level-box .mainAddress.active {
+  display: block;
+}
+.listingSection .listing_blk .grid-l1 .boxListing .box-acco .level-box .tab_title_inner_blk {
+  display: flex;
+}
+.listingSection .listing_blk .grid-l1 .boxListing .box-acco .level-box .tab_title_inner_blk li span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

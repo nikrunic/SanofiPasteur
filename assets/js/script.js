@@ -4,22 +4,25 @@ $(function () {
   }
 
   $(".tab_title_inner_blk li").on("click", function (e) {
+    e.preventDefault();
+    $(".mainAddress, .locationNow").removeClass("active");
     changeTab($(this));
   });
 
-  if (window.location.hash) {
-    var hash = window.location.hash;
-    $(".tab_title_inner_blk li span a[href='" + hash + "']")
-      .parents("li")
-      .click();
-  }
+  
 
   if ($(".scroll").length) {
     $(".scroll").jScrollPane();
   }
-  $("body").on("click", ".listigHeader", function (e) {
-    $(".box-a1").find(".level-box").stop().slideUp();
-    $(this).closest(".box-a1").find(".level-box").stop().slideToggle();
+  $("body").on("click", ".listigHeader .compDetails", function (e) {
+    var el = $(this).parents(".listigHeader");
+    $(".box-acco").find(".level-box").stop().slideUp();
+    $(el).find(".locationNow").toggleClass("active");
+    $(el).closest(".box-acco").find(".level-box").stop().slideToggle();
+  });
+  $("body").on("click", ".locationNow", function (e) {
+    $(".mainAddress").addClass("active");
+    $(".tab_cont_li, .tab_title_inner_blk li").removeClass("active");
   });
 });
 

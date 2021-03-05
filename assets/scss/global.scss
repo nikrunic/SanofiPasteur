@@ -702,6 +702,12 @@ label {
 .custom-map-control-button:hover {
   background: #ebebeb;
 }
+
+.tab_cont_li{display:none;}
+			.tab_cont_li.active { display: block;}
+			.tab_title_inner_blk li.active { background: #bdbaba;}
+			.tab_cont_blk{margin-top:10px;}
+      
 body * {
-  //   opacity: 0.7 !important;
+    opacity: 1 !important;
 }
