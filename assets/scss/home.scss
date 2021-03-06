@@ -50,6 +50,7 @@
       padding-right: 0.9rem;
       img {
         margin-right: 0.5rem;
+        width: 2.28rem;
       }
     }
     a {
@@ -60,6 +61,18 @@
       cursor: pointer;
       font-size: 1.32rem;
       margin-left: 0.4rem;
+    }
+    .currentLocation {
+      @media (max-width: 991px) {
+        flex-direction: column;
+      }
+    }
+    .getLoaction {
+      margin-left: auto;
+      @media (max-width: 991px) {
+        margin-top: 2rem;
+        margin-right: auto;
+      }
     }
   }
   .locationSec_2 {
@@ -73,26 +86,41 @@
     ul {
       margin-left: -15px;
       margin-right: -15px;
+      @media (max-width: 991px) {
+        flex-direction: column;
+      }
       li {
         padding-left: 25px;
         padding-right: 25px;
         width: 33.33%;
+        @media (max-width: 991px) {
+          padding-left: 35px;
+          padding-right: 35px;
+          width: 100%;
+          &:not(:last-child) {
+            margin-bottom: 1.375rem;
+          }
+        }
         .form-control {
           width: 100%;
-          height: 80px;
+          height: 3.2rem;
           background: #9ca913;
-          border: 4px solid #fff;
+          border: 0.16rem solid #fff;
           border-radius: 5px;
           text-align: center;
           font-size: 1.6rem;
           color: #fff;
+          @media (max-width: 991px) {
+            height: 4.85rem;
+            font-size: 1.625rem;
+          }
           &::placeholder {
             color: #ffffff80;
           }
         }
         .btn {
           width: 100%;
-          height: 100%;
+          height: 3.2rem;
           font-size: 1.5rem;
           border: 2px solid #fff;
           display: flex;
@@ -100,6 +128,10 @@
           justify-content: center;
           img {
             margin-right: 7px;
+          }
+          @media (max-width: 991px) {
+            height: 4.85rem;
+            font-size: 1.625rem;
           }
         }
       }
@@ -113,6 +145,7 @@
     display: flex;
     align-items: flex-end;
     font-family: $font-bold;
+    color: #58595b;
     small {
       font-family: $font;
       font-size: 40%;
@@ -135,7 +168,7 @@
           height: auto;
           overflow: hidden;
           border-radius: 15px;
-          // background: #4a63ae;
+          background: #4a63ae;
 
           .listigHeader {
             width: 100%;
@@ -150,13 +183,20 @@
             padding-bottom: 0.6rem;
             padding-left: 2.2rem;
             justify-content: space-between;
+
+            @media (max-width: 991px) {
+              padding-left: 1.0625rem;
+              flex-direction: column;
+              align-items: flex-start;
+            }
             .compDetails {
               display: flex;
               align-items: center;
 
               .compImg {
-                height: 116px;
-                width: 116px;
+                height: 4.64rem;
+                width: 4.64rem;
+                min-width: 4.64rem;
                 background-color: #fff;
                 border-radius: 50%;
                 display: flex;
@@ -169,8 +209,9 @@
               .compName {
                 font-size: 1.5508rem;
                 color: #fff;
-                font-weight: 600;
+                // font-weight: 600;
                 padding-left: 1.3rem;
+                line-height: 1.2;
               }
             }
             .compContact {
@@ -180,19 +221,33 @@
               justify-content: space-between;
               width: 33.6%;
               padding-right: 1.5rem;
+
+              @media (max-width: 1200px) {
+                width: auto;
+              }
+              @media (max-width: 991px) {
+                width: 100%;
+                padding-left: 6.24rem;
+              }
               .connect {
                 display: flex;
                 align-items: center;
                 .callNow,
                 .mailNow {
-                  font-size: 30px;
+                  font-size: 1.2rem;
                   display: flex;
                   align-items: center;
                   color: #fff;
                   padding-right: 1rem;
                   img {
                     margin-right: 10px;
+                    width: 1.52rem;
                   }
+                }
+              }
+              .locationNow {
+                img {
+                  width: 1.76rem;
                 }
               }
             }
@@ -203,6 +258,11 @@
             overflow: hidden;
             padding: 0 2.5rem;
             display: none;
+            color: #fff;
+
+            @media (max-width: 991px) {
+              padding: 0;
+            }
             .mainAddress {
               display: none;
               &.active {
@@ -214,9 +274,14 @@
               font-size: 1.2rem;
               line-height: 1.4;
               margin-top: 1.26rem;
-              border-top: 3px solid #000;
-              border-bottom: 3px solid #000;
+              border-top: 0.12rem solid #e3ebf1;
+              border-bottom: 0.12rem solid #e3ebf1;
               min-height: 11.539rem;
+              position: relative;
+              @media (max-width: 991px) {
+                padding-left: 1.875rem;
+                padding-right: 1.875rem;
+              }
               .address {
                 font-size: 1.2rem;
                 margin-bottom: 0.9rem;
@@ -227,17 +292,26 @@
               }
             }
             .tab_title_blk {
-              padding: 28px 150px;
+              padding: 1.12rem 6rem;
+
+              @media (max-width: 991px) {
+                padding-left: 0;
+                padding-right: 0;
+              }
               .tab_title_inner_blk {
                 display: flex;
                 margin-left: -10px;
                 margin-right: -10px;
+
+                @media (max-width: 991px) {
+                  justify-content: center;
+                }
                 li {
                   span {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    font-size: 24px;
+                    font-size: 0.96rem;
                     svg {
                       font-size: 2rem;
                       color: #e3ebf1;
@@ -246,8 +320,8 @@
                       font-size: 0.96rem;
                       color: #fff;
                       display: block;
-                      padding: 0 10px;
-                      margin-top: 17px;
+                      padding: 0 0.4rem;
+                      margin-top: 0.68rem;
                     }
                   }
                   &:not(:last-child) {
@@ -270,5 +344,43 @@
         }
       }
     }
+  }
+}
+.tab_cont_li {
+  color: #fff;
+  .tabContImg {
+    position: absolute;
+    font-size: 2.8rem;
+    left: 1.28rem;
+    color: #fff;
+    top: 1.32rem;
+
+    @media (max-width: 991px) {
+      position: relative;
+      left: auto;
+      top: auto;
+      line-height: 1;
+    }
+  }
+  .compD {
+    @media (max-width: 991px) {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.16rem;
+    }
+  }
+  .tabContTitle {
+    font-size: 1.56rem;
+    text-transform: uppercase;
+    font-family: $font-bold;
+    margin-bottom: 1.16rem;
+    @media (max-width: 991px) {
+      margin-bottom: 0;
+      padding-left: 1.875rem;
+    }
+  }
+  .tabContdesc {
+    font-size: 1.2rem;
+    line-height: 1.4;
   }
 }

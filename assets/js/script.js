@@ -9,8 +9,6 @@ $(function () {
     changeTab($(this));
   });
 
-  
-
   if ($(".scroll").length) {
     $(".scroll").jScrollPane();
   }
@@ -19,6 +17,8 @@ $(function () {
     $(".box-acco").find(".level-box").stop().slideUp();
     $(el).find(".locationNow").toggleClass("active");
     $(el).closest(".box-acco").find(".level-box").stop().slideToggle();
+    $(".mainAddress").addClass("active");
+    $(".tab_cont_li, .tab_title_inner_blk li").removeClass("active");
   });
   $("body").on("click", ".locationNow", function (e) {
     $(".mainAddress").addClass("active");
