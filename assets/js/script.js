@@ -1,8 +1,4 @@
 $(function () {
-  if ($(window).width() < 769) {
-    $(".bottomHeader").css({ top: $(".topHeader").outerHeight(true) });
-  }
-
   $(".tab_title_inner_blk li").on("click", function (e) {
     e.preventDefault();
     $(".mainAddress, .locationNow").removeClass("active");
@@ -15,7 +11,12 @@ $(function () {
   $("body").on("click", ".listigHeader .compDetails", function (e) {
     var el = $(this).parents(".listigHeader");
     $(".box-acco").find(".level-box").stop().slideUp();
-    $(el).find(".locationNow").toggleClass("active");
+    if ($(el).find(".locationNow").hasClass("active")) {
+      $(el).find(".locationNow").removeClass("active");
+    } else {
+      $(".locationNow").removeClass("active");
+      $(el).find(".locationNow").addClass("active");
+    }
     $(el).closest(".box-acco").find(".level-box").stop().slideToggle();
     $(".mainAddress").addClass("active");
     $(".tab_cont_li, .tab_title_inner_blk li").removeClass("active");

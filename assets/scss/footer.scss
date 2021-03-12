@@ -1,14 +1,16 @@
-footer {
-  background: #0e1f51;
-  color: #ffffff;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  .topFooter {
-    max-width: 870px;
-    width: 100%;
-    margin: auto;
-    font-style: $font;
-    text-align: center;
-    line-height: 1.2;
+.vaxsupplypoint {
+  footer {
+    background: #0e1f51;
+    color: #ffffff;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .topFooter {
+      max-width: 870px;
+      width: 100%;
+      margin: auto;
+      font-style: $font;
+      text-align: center;
+      line-height: 1.2;
+    }
   }
 }

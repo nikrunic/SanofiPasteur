@@ -144,143 +144,57 @@ input:disabled {
   cursor: not-allowed;
 }
 
-html {
+html.flexbox {
   height: 100%;
   overflow-y: auto;
   font-size: 25px;
 }
 @media (max-width: 1650px) {
-  html {
+  html.flexbox {
     font-size: 22px;
   }
 }
 @media (max-width: 1440px) {
-  html {
+  html.flexbox {
     font-size: 19px;
   }
 }
 @media (max-width: 1300px) {
-  html {
+  html.flexbox {
     font-size: 18px;
   }
 }
 @media (max-width: 1200px) {
-  html {
+  html.flexbox {
     font-size: 14px;
   }
 }
 @media (max-width: 991px) {
-  html {
+  html.flexbox {
     font-size: 16px;
   }
 }
 @media (max-width: 767px) {
-  html {
+  html.flexbox {
     font-size: 14px;
   }
 }
 @media (max-width: 575px) {
-  html {
+  html.flexbox {
     font-size: 12px;
   }
 }
 
-.container {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-@media (max-width: 767px) {
-  .container {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
-@media (min-width: 768px) {
-  .container {
-    max-width: 700px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    max-width: 900px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
-}
-@media (min-width: 1300px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-@media (min-width: 1440px) {
-  .container {
-    max-width: 1400px;
-  }
-}
-@media (min-width: 1640px) {
-  .container {
-    max-width: 1600px;
-  }
-}
-
-body {
+.flexbox body {
   font-size: 1rem;
   font-family: "ITCAvantGardePro-Md", sans-serif;
   line-height: 1;
   background-size: 100% auto;
 }
 @media (max-width: 767px) {
-  body {
+  .flexbox body {
     font-size: 1.25rem;
   }
-}
-
-h1 {
-  font-size: 3rem;
-}
-
-h2 {
-  font-size: 2.5rem;
-}
-
-h3 {
-  font-size: 2rem;
-  font-weight: 400;
-}
-
-h4 {
-  font-size: 1.5rem;
-  font-weight: 400;
-}
-
-h5 {
-  font-size: 1rem;
-  font-weight: 400;
-}
-
-h6 {
-  font-size: 0.9rem;
-  font-weight: 400;
-}
-
-.text-left {
-  text-align: left !important;
-}
-
-.text-right {
-  text-align: right !important;
-}
-
-.text-center {
-  text-align: center !important;
-}
-
-.text-white {
-  color: #fff !important;
 }
 
 .link {
@@ -294,290 +208,6 @@ label {
   display: block;
 }
 
-.mt-0,
-.my-0 {
-  margin-top: 0 !important;
-}
-
-.mr-0,
-.mx-0 {
-  margin-right: 0 !important;
-}
-
-.mb-0,
-.my-0 {
-  margin-bottom: 0 !important;
-}
-
-.ml-0,
-.mx-0 {
-  margin-left: 0 !important;
-}
-
-.m-1 {
-  margin: 0.25rem !important;
-}
-
-.mt-1,
-.my-1 {
-  margin-top: 0.25rem !important;
-}
-
-.mr-1,
-.mx-1 {
-  margin-right: 0.25rem !important;
-}
-
-.mb-1,
-.my-1 {
-  margin-bottom: 0.25rem !important;
-}
-
-.ml-1,
-.mx-1 {
-  margin-left: 0.25rem !important;
-}
-
-.m-2 {
-  margin: 0.5rem !important;
-}
-
-.mt-2,
-.my-2 {
-  margin-top: 0.5rem !important;
-}
-
-.mr-2,
-.mx-2 {
-  margin-right: 0.5rem !important;
-}
-
-.mb-2,
-.my-2 {
-  margin-bottom: 0.5rem !important;
-}
-
-.ml-2,
-.mx-2 {
-  margin-left: 0.5rem !important;
-}
-
-.m-3 {
-  margin: 1rem !important;
-}
-
-.mt-3,
-.my-3 {
-  margin-top: 1rem !important;
-}
-
-.mr-3,
-.mx-3 {
-  margin-right: 1rem !important;
-}
-
-.mb-3,
-.my-3 {
-  margin-bottom: 1rem !important;
-}
-
-.ml-3,
-.mx-3 {
-  margin-left: 1rem !important;
-}
-
-.m-4 {
-  margin: 1.5rem !important;
-}
-
-.mt-4,
-.my-4 {
-  margin-top: 1.5rem !important;
-}
-
-.mr-4,
-.mx-4 {
-  margin-right: 1.5rem !important;
-}
-
-.mb-4,
-.my-4 {
-  margin-bottom: 1.5rem !important;
-}
-
-.ml-4,
-.mx-4 {
-  margin-left: 1.5rem !important;
-}
-
-.m-5 {
-  margin: 3rem !important;
-}
-
-.mt-5,
-.my-5 {
-  margin-top: 3rem !important;
-}
-
-.mr-5,
-.mx-5 {
-  margin-right: 3rem !important;
-}
-
-.mb-5,
-.my-5 {
-  margin-bottom: 3rem !important;
-}
-
-.ml-5,
-.mx-5 {
-  margin-left: 3rem !important;
-}
-
-.p-0 {
-  padding: 0 !important;
-}
-
-.pt-0,
-.py-0 {
-  padding-top: 0 !important;
-}
-
-.pr-0,
-.px-0 {
-  padding-right: 0 !important;
-}
-
-.pb-0,
-.py-0 {
-  padding-bottom: 0 !important;
-}
-
-.pl-0,
-.px-0 {
-  padding-left: 0 !important;
-}
-
-.p-1 {
-  padding: 0.25rem !important;
-}
-
-.pt-1,
-.py-1 {
-  padding-top: 0.25rem !important;
-}
-
-.pr-1,
-.px-1 {
-  padding-right: 0.25rem !important;
-}
-
-.pb-1,
-.py-1 {
-  padding-bottom: 0.25rem !important;
-}
-
-.pl-1,
-.px-1 {
-  padding-left: 0.25rem !important;
-}
-
-.p-2 {
-  padding: 0.5rem !important;
-}
-
-.pt-2,
-.py-2 {
-  padding-top: 0.5rem !important;
-}
-
-.pr-2,
-.px-2 {
-  padding-right: 0.5rem !important;
-}
-
-.pb-2,
-.py-2 {
-  padding-bottom: 0.5rem !important;
-}
-
-.pl-2,
-.px-2 {
-  padding-left: 0.5rem !important;
-}
-
-.p-3 {
-  padding: 1rem !important;
-}
-
-.pt-3,
-.py-3 {
-  padding-top: 1rem !important;
-}
-
-.pr-3,
-.px-3 {
-  padding-right: 1rem !important;
-}
-
-.pb-3,
-.py-3 {
-  padding-bottom: 1rem !important;
-}
-
-.pl-3,
-.px-3 {
-  padding-left: 1rem !important;
-}
-
-.p-4 {
-  padding: 1.5rem !important;
-}
-
-.pt-4,
-.py-4 {
-  padding-top: 1.5rem !important;
-}
-
-.pr-4,
-.px-4 {
-  padding-right: 1.5rem !important;
-}
-
-.pb-4,
-.py-4 {
-  padding-bottom: 1.5rem !important;
-}
-
-.pl-4,
-.px-4 {
-  padding-left: 1.5rem !important;
-}
-
-.p-5 {
-  padding: 3rem !important;
-}
-
-.pt-5,
-.py-5 {
-  padding-top: 3rem !important;
-}
-
-.pr-5,
-.px-5 {
-  padding-right: 3rem !important;
-}
-
-.pb-5,
-.py-5 {
-  padding-bottom: 3rem !important;
-}
-
-.pl-5,
-.px-5 {
-  padding-left: 3rem !important;
-}
-
 .d-flex {
   display: flex;
 }
@@ -588,14 +218,6 @@ label {
 
 .flex-column {
   flex-direction: column;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
-}
-
-.flex-nowrap {
-  flex-wrap: nowrap;
 }
 
 .justify-content-start {
@@ -614,10 +236,6 @@ label {
   justify-content: space-between;
 }
 
-.justify-content-around {
-  justify-content: space-around;
-}
-
 .align-items-start {
   align-items: flex-start;
 }
@@ -630,83 +248,70 @@ label {
   align-items: center;
 }
 
-.align-items-baseline {
-  align-items: baseline;
-}
-
-.align-items-stretch {
-  align-items: stretch;
-}
-
-.align-content-start {
-  align-content: flex-start;
-}
-
-.align-content-end {
-  align-content: flex-end;
-}
-
-.align-content-center {
-  align-content: center;
-}
-
-.align-content-between {
-  align-content: space-between;
-}
-
-.align-content-around {
-  align-content: space-around;
-}
-
-.align-content-stretch {
-  align-content: stretch;
-}
-
-.align-self-auto {
-  align-self: auto;
-}
-
-.align-self-start {
-  align-self: flex-start;
-}
-
-.align-self-end {
-  align-self: flex-end;
-}
-
-.align-self-center {
-  align-self: center;
-}
-
-.align-self-baseline {
-  align-self: baseline;
-}
-
-.align-self-stretch {
-  align-self: stretch;
-}
-
-.w-25 {
-  width: 25%;
-}
-
-.w-50 {
-  width: 50%;
-}
-
-.w-75 {
-  width: 75%;
-}
-
-.w-100 {
+.vaxsupplypoint .container {
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-.w-auto {
-  width: auto;
+@media (max-width: 767px) {
+  .vaxsupplypoint .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
-
-.btn {
+@media (min-width: 768px) {
+  .vaxsupplypoint .container {
+    max-width: 700px;
+  }
+}
+@media (min-width: 992px) {
+  .vaxsupplypoint .container {
+    max-width: 900px;
+  }
+}
+@media (min-width: 1200px) {
+  .vaxsupplypoint .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1300px) {
+  .vaxsupplypoint .container {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1440px) {
+  .vaxsupplypoint .container {
+    max-width: 1400px;
+  }
+}
+@media (min-width: 1640px) {
+  .vaxsupplypoint .container {
+    max-width: 1600px;
+  }
+}
+.vaxsupplypoint h1 {
+  font-size: 3rem;
+}
+.vaxsupplypoint h2 {
+  font-size: 2.5rem;
+}
+.vaxsupplypoint h3 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.vaxsupplypoint h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.vaxsupplypoint h5 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.vaxsupplypoint h6 {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.vaxsupplypoint .btn {
   min-height: 52px;
   padding: 12px 22px;
   line-height: 1;
@@ -714,19 +319,18 @@ label {
   border-radius: 8px;
   cursor: pointer;
 }
-.btn:hover {
+.vaxsupplypoint .btn:hover {
   opacity: 0.9;
 }
-.btn.btn-primary {
+.vaxsupplypoint .btn.btn-primary {
   background-color: #0468a6;
   color: #fff;
 }
-.btn.btn-secondary {
+.vaxsupplypoint .btn.btn-secondary {
   background-color: #9ca913;
   color: #fff;
 }
-
-.custom-map-control-button {
+.vaxsupplypoint .custom-map-control-button {
   -webkit-appearance: button;
           appearance: button;
   background-color: #fff;
@@ -740,52 +344,45 @@ label {
   font: 400 18px Roboto, Arial, sans-serif;
   overflow: hidden;
 }
-
-.custom-map-control-button:hover {
+.vaxsupplypoint .custom-map-control-button:hover {
   background: #ebebeb;
 }
-
-.tab_cont_li {
+.vaxsupplypoint .tab_cont_li {
   display: none;
 }
-
-.tab_cont_li.active {
+.vaxsupplypoint .tab_cont_li.active {
   display: block;
 }
 
-body * {
-  opacity: 1 !important;
-}
-
-header {
+.vaxsupplypoint header {
   color: #fff;
   position: relative;
 }
-header .topHeader {
+.vaxsupplypoint header .topHeader {
   background-color: #ffffff;
   border-bottom: 0.32rem solid #1775b1;
   padding: 1.4rem 0;
 }
-header .logo {
+.vaxsupplypoint header .logo {
   display: flex;
   justify-content: flex-end;
 }
-header .logo img {
+.vaxsupplypoint header .logo img {
   max-width: 100%;
 }
 @media (max-width: 767px) {
-  header .logo img {
-    max-height: 18px;
+  .vaxsupplypoint header .logo img {
+    max-height: 26px;
   }
 }
 
-footer {
+.vaxsupplypoint footer {
   background: #0e1f51;
   color: #ffffff;
   padding-top: 40px;
   padding-bottom: 40px;
 }
-footer .topFooter {
+.vaxsupplypoint footer .topFooter {
   max-width: 870px;
   width: 100%;
   margin: auto;
@@ -907,14 +504,26 @@ footer .topFooter {
   margin: 0 -3px 0 0;
 }
 
-.banner {
+.vaxsupplypoint .banner {
   position: relative;
 }
-.banner img {
+.vaxsupplypoint .banner img {
   max-width: 100%;
   display: block;
 }
-.banner .bannerContent {
+.vaxsupplypoint .banner img.mobBanner {
+  display: none;
+}
+@media (max-width: 991px) {
+  .vaxsupplypoint .banner img.deskBanner {
+    display: none;
+  }
+  .vaxsupplypoint .banner img.mobBanner {
+    display: block;
+    width: 100%;
+  }
+}
+.vaxsupplypoint .banner .bannerContent {
   position: absolute;
   top: 0;
   left: 0;
@@ -927,31 +536,36 @@ footer .topFooter {
   display: flex;
   padding-top: 13.4%;
 }
-.banner .bannerContent h2 {
+@media (max-width: 991px) {
+  .vaxsupplypoint .banner .bannerContent {
+    top: auto;
+    bottom: 3rem;
+  }
+}
+.vaxsupplypoint .banner .bannerContent h2 {
   font-size: 3.552rem;
   text-transform: uppercase;
   line-height: 1;
 }
-
-.locationSection {
+.vaxsupplypoint .locationSection {
   background-color: #9ca913;
   color: #fff;
 }
-.locationSection hr {
+.vaxsupplypoint .locationSection hr {
   border: 1px solid #282828;
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
-.locationSection .locationSec_1 {
+.vaxsupplypoint .locationSection .locationSec_1 {
   padding-top: 1.9rem;
   padding-bottom: 3.8rem;
   font-family: "ITCAvantGardePro-Bk", sans-serif;
 }
-.locationSection .locationSec_1 h4 {
+.vaxsupplypoint .locationSection .locationSec_1 h4 {
   font-size: 1.44rem;
   line-height: 1.3;
 }
-.locationSection .locationSec_1 h3 {
+.vaxsupplypoint .locationSection .locationSec_1 h3 {
   display: inline-flex;
   align-items: center;
   font-size: 1.838rem;
@@ -960,13 +574,13 @@ footer .topFooter {
   font-family: "ITCAvantGardePro-Md", sans-serif;
   padding-right: 0.9rem;
 }
-.locationSection .locationSec_1 h3 img {
+.vaxsupplypoint .locationSection .locationSec_1 h3 img {
   margin-right: 0.5rem;
   width: 2.28rem;
 }
-.locationSection .locationSec_1 a {
+.vaxsupplypoint .locationSection .locationSec_1 a {
   padding: 0.8rem 1.4rem;
-  line-height: 1;
+  line-height: 2;
   display: inline-flex;
   border-radius: 8px;
   cursor: pointer;
@@ -974,51 +588,51 @@ footer .topFooter {
   margin-left: 0.4rem;
 }
 @media (max-width: 991px) {
-  .locationSection .locationSec_1 .currentLocation {
+  .vaxsupplypoint .locationSection .locationSec_1 .currentLocation {
     flex-direction: column;
   }
 }
-.locationSection .locationSec_1 .getLoaction {
+.vaxsupplypoint .locationSection .locationSec_1 .getLoaction {
   margin-left: auto;
 }
 @media (max-width: 991px) {
-  .locationSection .locationSec_1 .getLoaction {
+  .vaxsupplypoint .locationSection .locationSec_1 .getLoaction {
     margin-top: 2rem;
     margin-right: auto;
   }
 }
-.locationSection .locationSec_2 #map {
+.vaxsupplypoint .locationSection .locationSec_2 #map {
   height: 60vh;
   min-height: 28.8rem;
 }
-.locationSection .locationSec_3 {
+.vaxsupplypoint .locationSection .locationSec_3 {
   padding: 5rem 0;
 }
-.locationSection .locationSec_3 ul {
+.vaxsupplypoint .locationSection .locationSec_3 ul {
   margin-left: -15px;
   margin-right: -15px;
 }
 @media (max-width: 991px) {
-  .locationSection .locationSec_3 ul {
+  .vaxsupplypoint .locationSection .locationSec_3 ul {
     flex-direction: column;
   }
 }
-.locationSection .locationSec_3 ul li {
+.vaxsupplypoint .locationSection .locationSec_3 ul li {
   padding-left: 25px;
   padding-right: 25px;
   width: 33.33%;
 }
 @media (max-width: 991px) {
-  .locationSection .locationSec_3 ul li {
+  .vaxsupplypoint .locationSection .locationSec_3 ul li {
     padding-left: 35px;
     padding-right: 35px;
     width: 100%;
   }
-  .locationSection .locationSec_3 ul li:not(:last-child) {
+  .vaxsupplypoint .locationSection .locationSec_3 ul li:not(:last-child) {
     margin-bottom: 1.375rem;
   }
 }
-.locationSection .locationSec_3 ul li .form-control {
+.vaxsupplypoint .locationSection .locationSec_3 ul li .form-control {
   width: 100%;
   height: 3.2rem;
   background: #9ca913;
@@ -1029,15 +643,15 @@ footer .topFooter {
   color: #fff;
 }
 @media (max-width: 991px) {
-  .locationSection .locationSec_3 ul li .form-control {
+  .vaxsupplypoint .locationSection .locationSec_3 ul li .form-control {
     height: 4.85rem;
     font-size: 1.625rem;
   }
 }
-.locationSection .locationSec_3 ul li .form-control::placeholder {
+.vaxsupplypoint .locationSection .locationSec_3 ul li .form-control::placeholder {
   color: #ffffff80;
 }
-.locationSection .locationSec_3 ul li .btn {
+.vaxsupplypoint .locationSection .locationSec_3 ul li .btn {
   width: 100%;
   height: 3.2rem;
   font-size: 1.5rem;
@@ -1046,52 +660,51 @@ footer .topFooter {
   align-items: center;
   justify-content: center;
 }
-.locationSection .locationSec_3 ul li .btn img {
+.vaxsupplypoint .locationSection .locationSec_3 ul li .btn img {
   margin-right: 7px;
 }
 @media (max-width: 991px) {
-  .locationSection .locationSec_3 ul li .btn {
+  .vaxsupplypoint .locationSection .locationSec_3 ul li .btn {
     height: 4.85rem;
     font-size: 1.625rem;
   }
 }
-
-.listingSection {
+.vaxsupplypoint .listingSection {
   padding-top: 4rem;
 }
-.listingSection h1 {
+.vaxsupplypoint .listingSection h1 {
   font-size: 3.43rem;
   display: flex;
   align-items: flex-end;
   font-family: "ITCAvantGardePro-Bold", sans-serif;
   color: #58595b;
 }
-.listingSection h1 small {
+.vaxsupplypoint .listingSection h1 small {
   font-family: "ITCAvantGardePro-Md", sans-serif;
   font-size: 40%;
   padding-left: 1.9%;
   margin-bottom: 0.3rem;
 }
-.listingSection .listing_blk {
+.vaxsupplypoint .listingSection .listing_blk {
   padding: 2.1rem 0.3rem;
 }
-.listingSection .listing_blk .grid-l1 {
+.vaxsupplypoint .listingSection .listing_blk .grid-l1 {
   width: 100%;
   height: auto;
   overflow: hidden;
 }
-.listingSection .listing_blk .grid-l1 .boxListing {
+.vaxsupplypoint .listingSection .listing_blk .grid-l1 .boxListing {
   padding: 1.44rem 0;
   border-bottom: 3px solid #808285;
 }
-.listingSection .listing_blk .grid-l1 .boxListing .box-acco {
+.vaxsupplypoint .listingSection .listing_blk .grid-l1 .boxListing .box-acco {
   width: 100%;
   height: auto;
   overflow: hidden;
   border-radius: 15px;
   background: #4a63ae;
 }
-.listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader {
+.vaxsupplypoint .listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader {
   width: 100%;
   text-align: left;
   color: #fff;
@@ -1105,17 +718,17 @@ footer .topFooter {
   justify-content: space-between;
 }
 @media (max-width: 991px) {
-  .listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader {
+  .vaxsupplypoint .listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader {
     padding-left: 1.0625rem;
     flex-direction: column;
     align-items: flex-start;
   }
 }
-.listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader .compDetails {
+.vaxsupplypoint .listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader .compDetails {
   display: flex;
   align-items: center;
 }
-.listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader .compDetails .compImg {
+.vaxsupplypoint .listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader .compDetails .compImg {
   height: 4.64rem;
   width: 4.64rem;
   min-width: 4.64rem;
@@ -1125,16 +738,16 @@ footer .topFooter {
   align-items: center;
   justify-content: center;
 }
-.listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader .compDetails .compImg img {
+.vaxsupplypoint .listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader .compDetails .compImg img {
   max-width: 95%;
 }
-.listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader .compDetails .compName {
+.vaxsupplypoint .listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader .compDetails .compName {
   font-size: 1.5508rem;
   color: #fff;
   padding-left: 1.3rem;
   line-height: 1.2;
 }
-.listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader .compContact {
+.vaxsupplypoint .listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader .compContact {
   display: flex;
   align-items: center;
   font-size: 1.3rem;
@@ -1143,37 +756,61 @@ footer .topFooter {
   padding-right: 1.5rem;
 }
 @media (max-width: 1200px) {
-  .listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader .compContact {
+  .vaxsupplypoint .listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader .compContact {
     width: auto;
   }
 }
 @media (max-width: 991px) {
-  .listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader .compContact {
+  .vaxsupplypoint .listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader .compContact {
     width: 100%;
     padding-left: 6.24rem;
   }
 }
-.listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader .compContact .connect {
+.vaxsupplypoint .listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader .compContact .connect {
   display: flex;
   align-items: center;
 }
-.listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader .compContact .connect .callNow,
-.listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader .compContact .connect .mailNow {
+.vaxsupplypoint .listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader .compContact .connect .callNow,
+.vaxsupplypoint .listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader .compContact .connect .mailNow {
   font-size: 1.2rem;
   display: flex;
   align-items: center;
   color: #fff;
   padding-right: 1rem;
 }
-.listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader .compContact .connect .callNow img,
-.listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader .compContact .connect .mailNow img {
+.vaxsupplypoint .listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader .compContact .connect .callNow img,
+.vaxsupplypoint .listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader .compContact .connect .mailNow img {
   margin-right: 10px;
   width: 1.52rem;
 }
-.listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader .compContact .locationNow img {
+.vaxsupplypoint .listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader .compContact .locationNow {
   width: 1.76rem;
+  height: 1.76rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.listingSection .listing_blk .grid-l1 .boxListing .box-acco .level-box {
+.vaxsupplypoint .listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader .compContact .locationNow::after, .vaxsupplypoint .listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader .compContact .locationNow::before {
+  content: "";
+  position: relative;
+  width: 1rem;
+  height: 0.1rem;
+  background-color: #fff;
+  transform-origin: center;
+}
+.vaxsupplypoint .listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader .compContact .locationNow::before {
+  transform: rotate(90deg);
+}
+.vaxsupplypoint .listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader .compContact .locationNow::after {
+  transform: rotate(0deg);
+  top: -3px;
+}
+.vaxsupplypoint .listingSection .listing_blk .grid-l1 .boxListing .box-acco .listigHeader .compContact .locationNow.active::before {
+  transform: rotate(0deg);
+}
+.vaxsupplypoint .listingSection .listing_blk .grid-l1 .boxListing .box-acco .level-box {
   width: 100%;
   height: auto;
   overflow: hidden;
@@ -1182,17 +819,17 @@ footer .topFooter {
   color: #fff;
 }
 @media (max-width: 991px) {
-  .listingSection .listing_blk .grid-l1 .boxListing .box-acco .level-box {
+  .vaxsupplypoint .listingSection .listing_blk .grid-l1 .boxListing .box-acco .level-box {
     padding: 0;
   }
 }
-.listingSection .listing_blk .grid-l1 .boxListing .box-acco .level-box .mainAddress {
+.vaxsupplypoint .listingSection .listing_blk .grid-l1 .boxListing .box-acco .level-box .mainAddress {
   display: none;
 }
-.listingSection .listing_blk .grid-l1 .boxListing .box-acco .level-box .mainAddress.active {
+.vaxsupplypoint .listingSection .listing_blk .grid-l1 .boxListing .box-acco .level-box .mainAddress.active {
   display: block;
 }
-.listingSection .listing_blk .grid-l1 .boxListing .box-acco .level-box .tab_cont_blk {
+.vaxsupplypoint .listingSection .listing_blk .grid-l1 .boxListing .box-acco .level-box .tab_cont_blk {
   padding: 1.56rem 6.72rem 1.32rem 5.92rem;
   font-size: 1.2rem;
   line-height: 1.4;
@@ -1203,67 +840,66 @@ footer .topFooter {
   position: relative;
 }
 @media (max-width: 991px) {
-  .listingSection .listing_blk .grid-l1 .boxListing .box-acco .level-box .tab_cont_blk {
+  .vaxsupplypoint .listingSection .listing_blk .grid-l1 .boxListing .box-acco .level-box .tab_cont_blk {
     padding-left: 1.875rem;
     padding-right: 1.875rem;
   }
 }
-.listingSection .listing_blk .grid-l1 .boxListing .box-acco .level-box .tab_cont_blk .address {
+.vaxsupplypoint .listingSection .listing_blk .grid-l1 .boxListing .box-acco .level-box .tab_cont_blk .address {
   font-size: 1.2rem;
   margin-bottom: 0.9rem;
 }
-.listingSection .listing_blk .grid-l1 .boxListing .box-acco .level-box .tab_cont_blk .phone {
+.vaxsupplypoint .listingSection .listing_blk .grid-l1 .boxListing .box-acco .level-box .tab_cont_blk .phone {
   font-size: 1.2rem;
   margin-bottom: 0.8rem;
 }
-.listingSection .listing_blk .grid-l1 .boxListing .box-acco .level-box .tab_title_blk {
+.vaxsupplypoint .listingSection .listing_blk .grid-l1 .boxListing .box-acco .level-box .tab_title_blk {
   padding: 1.12rem 6rem;
 }
 @media (max-width: 991px) {
-  .listingSection .listing_blk .grid-l1 .boxListing .box-acco .level-box .tab_title_blk {
+  .vaxsupplypoint .listingSection .listing_blk .grid-l1 .boxListing .box-acco .level-box .tab_title_blk {
     padding-left: 0;
     padding-right: 0;
   }
 }
-.listingSection .listing_blk .grid-l1 .boxListing .box-acco .level-box .tab_title_blk .tab_title_inner_blk {
+.vaxsupplypoint .listingSection .listing_blk .grid-l1 .boxListing .box-acco .level-box .tab_title_blk .tab_title_inner_blk {
   display: flex;
   margin-left: -10px;
   margin-right: -10px;
 }
 @media (max-width: 991px) {
-  .listingSection .listing_blk .grid-l1 .boxListing .box-acco .level-box .tab_title_blk .tab_title_inner_blk {
+  .vaxsupplypoint .listingSection .listing_blk .grid-l1 .boxListing .box-acco .level-box .tab_title_blk .tab_title_inner_blk {
     justify-content: center;
   }
 }
-.listingSection .listing_blk .grid-l1 .boxListing .box-acco .level-box .tab_title_blk .tab_title_inner_blk li span {
+.vaxsupplypoint .listingSection .listing_blk .grid-l1 .boxListing .box-acco .level-box .tab_title_blk .tab_title_inner_blk li span {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 0.96rem;
 }
-.listingSection .listing_blk .grid-l1 .boxListing .box-acco .level-box .tab_title_blk .tab_title_inner_blk li span svg {
+.vaxsupplypoint .listingSection .listing_blk .grid-l1 .boxListing .box-acco .level-box .tab_title_blk .tab_title_inner_blk li span svg {
   font-size: 2rem;
   color: #e3ebf1;
 }
-.listingSection .listing_blk .grid-l1 .boxListing .box-acco .level-box .tab_title_blk .tab_title_inner_blk li span a {
+.vaxsupplypoint .listingSection .listing_blk .grid-l1 .boxListing .box-acco .level-box .tab_title_blk .tab_title_inner_blk li span a {
   font-size: 0.96rem;
   color: #fff;
   display: block;
   padding: 0 0.4rem;
   margin-top: 0.68rem;
 }
-.listingSection .listing_blk .grid-l1 .boxListing .box-acco .level-box .tab_title_blk .tab_title_inner_blk li:not(:last-child) span a {
+.vaxsupplypoint .listingSection .listing_blk .grid-l1 .boxListing .box-acco .level-box .tab_title_blk .tab_title_inner_blk li:not(:last-child) span a {
   border-right: 3px solid #fff;
 }
-.listingSection .listing_blk .grid-l1 .boxListing .box-acco .level-box .tab_title_blk .tab_title_inner_blk li.active svg,
-.listingSection .listing_blk .grid-l1 .boxListing .box-acco .level-box .tab_title_blk .tab_title_inner_blk li.active a {
+.vaxsupplypoint .listingSection .listing_blk .grid-l1 .boxListing .box-acco .level-box .tab_title_blk .tab_title_inner_blk li.active svg,
+.vaxsupplypoint .listingSection .listing_blk .grid-l1 .boxListing .box-acco .level-box .tab_title_blk .tab_title_inner_blk li.active a {
   color: #0e1f51;
 }
-
-.tab_cont_li {
+.vaxsupplypoint .tab_cont_li {
   color: #fff;
 }
-.tab_cont_li .tabContImg {
+.vaxsupplypoint .tab_cont_li .tabContImg {
   position: absolute;
   font-size: 2.8rem;
   left: 1.28rem;
@@ -1271,7 +907,7 @@ footer .topFooter {
   top: 1.32rem;
 }
 @media (max-width: 991px) {
-  .tab_cont_li .tabContImg {
+  .vaxsupplypoint .tab_cont_li .tabContImg {
     position: relative;
     left: auto;
     top: auto;
@@ -1279,25 +915,25 @@ footer .topFooter {
   }
 }
 @media (max-width: 991px) {
-  .tab_cont_li .compD {
+  .vaxsupplypoint .tab_cont_li .compD {
     display: flex;
     align-items: center;
     margin-bottom: 1.16rem;
   }
 }
-.tab_cont_li .tabContTitle {
+.vaxsupplypoint .tab_cont_li .tabContTitle {
   font-size: 1.56rem;
   text-transform: uppercase;
   font-family: "ITCAvantGardePro-Bold", sans-serif;
   margin-bottom: 1.16rem;
 }
 @media (max-width: 991px) {
-  .tab_cont_li .tabContTitle {
+  .vaxsupplypoint .tab_cont_li .tabContTitle {
     margin-bottom: 0;
     padding-left: 1.875rem;
   }
 }
-.tab_cont_li .tabContdesc {
+.vaxsupplypoint .tab_cont_li .tabContdesc {
   font-size: 1.2rem;
   line-height: 1.4;
 }
